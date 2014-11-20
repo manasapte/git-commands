@@ -1,0 +1,2 @@
+#!/bin/bash
+git push origin `git symbolic-ref -q --short HEAD`

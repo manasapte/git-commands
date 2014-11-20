@@ -1,0 +1,2 @@
+#!/bin/bash
+for file in `git ls-files -m`; do git add $file; done

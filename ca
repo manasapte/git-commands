@@ -1,0 +1,10 @@
+#!/bin/bash
+usage()
+{
+  echo "Usage: ca <commit message>"
+  exit 1
+}
+if [ -z "$1" ]; then
+  usage
+fi
+git commit -am "$1"

@@ -1,0 +1,10 @@
+#!/bin/bash
+usage()
+{
+  echo "Usage: prb <remote> <branch>"
+  exit 1
+}
+if [ -z "$1" ] || [ -z "$2" ]; then
+  usage
+fi
+git pull --rebase $1 $2
